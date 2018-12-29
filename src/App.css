@@ -1,32 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 .App {
   text-align: center;
+  height: 100vh;
+  background-color: #f7f7f7;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #f38181;
+  box-shadow: 0 2px 3px #e8e8e8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header h3 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-right: 15px;
+}
+
+.todolist {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-top: 5vh;
+}
+
+.todolist .addToDo {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.todolist .addToDo input {
+  width: 250px;
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  margin: 3vh 0;
+  padding: 5px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(80, 80, 80);
+  letter-spacing: 1px;
+}
+
+.btn-save {
+  border: 1px solid #fce38a;
+  background-color: #fce38a;
+}
+
+.btn-back {
+  text-decoration: none;
+  border: 1px solid #fce38a;
+  background-color: #fce38a;
+}
+
+.todolist h3 {
+  font-weight: 700;
+  color: #75b1a6;
+  letter-spacing: 0.5px;
+  margin-bottom: 3vh;
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo .wrapper {
+  margin: 0 15px 3vh 15px;
+}
+
+.todo .wrapper h4 {
+  font-weight: 600;
+  color: rgb(57, 57, 57);
+}
+
+.todo .wrapper p {
+  margin-top: 10px;
+}
+
+.todo .wrapper button {
+  background: none;
+  border: none;
+
+}
+
+.details {
+  margin-top: 3vh;
+}
+
+.details h4 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-bottom: 1vh;
+}
+
+.details p {
+  margin-bottom: 3vh;
 }
